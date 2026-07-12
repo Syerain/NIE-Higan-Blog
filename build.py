@@ -221,8 +221,8 @@ def build_post_page(
     summary = str(post.get("summary") or "")
 
     canonical = site_url.rstrip("/") + canonical_path
-    safe_desc = (summary or "聶.NET - A Geek's Blog").replace('"', "&quot;")
-    page_title = f"{title} - 聶.NET" if title else "聶.NET"
+    safe_desc = (summary or "Syayes").replace('"', "&quot;")
+    page_title = f"{title} - Syerain" if title else "Syayes"
 
     style_block = _extract_inline_style_from_index(ROOT / "index.html")
 
@@ -278,7 +278,7 @@ def build_post_page(
     <div class="brand-area">
       <img src="https://img.i8-mc.cn/file/J0NJk8wH.jpeg" class="avatar" alt="avatar" onclick="location.href='/'">
       <div style="display:flex; align-items:center;">
-        <span class="site-title" onclick="location.href='/'">聶.NET</span>
+        <span class="site-title" onclick="location.href='/'">Syerain</span>
         <i id="theme-icon" class="fa-solid fa-sun theme-icon" onclick="toggleTheme()"></i>
       </div>
     </div>
@@ -452,7 +452,7 @@ def build_post_page(
 
 
 def main() -> None:
-    site_url = os.environ.get("SITE_URL", "https://syerain.github.io/NIE-Higan-Blog").rstrip("/")
+    site_url = os.environ.get("SITE_URL", "https://syerain.github.io").rstrip("/")
 
     if not POSTS_DIR.exists():
         raise SystemExit(f"posts directory not found: {POSTS_DIR}")
