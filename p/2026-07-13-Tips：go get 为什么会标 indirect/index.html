@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="description" content="起因是刚开始学 go，发现项目 go.mod 里的包默认都标了 // indirect 百思不得其解，后来发现，每次加新包时 go get 都是显然跑在实际调用之前，所以当 go get 拿到包之后，代码还没开始写呢，所以包就被标成 indirect 了... 也算是过度依赖 ide 各种自动补全的表现？">
-  <link rel="canonical" href="https://syerain.github.io/p/2026-07-13-Nothin: go get 为什么会标 indirect/">
+  <link rel="canonical" href="https://syerain.github.io/p/2026-07-13-Tips：go get 为什么会标 indirect/">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Nothin: go get 为什么会标 indirect">
+  <meta property="og:title" content="Tips：go get 为什么会标 indirect">
   <meta property="og:description" content="起因是刚开始学 go，发现项目 go.mod 里的包默认都标了 // indirect 百思不得其解，后来发现，每次加新包时 go get 都是显然跑在实际调用之前，所以当 go get 拿到包之后，代码还没开始写呢，所以包就被标成 indirect 了... 也算是过度依赖 ide 各种自动补全的表现？">
-  <meta property="og:url" content="https://syerain.github.io/p/2026-07-13-Nothin: go get 为什么会标 indirect/">
-  <title>Nothin: go get 为什么会标 indirect - Syerain</title>
+  <meta property="og:url" content="https://syerain.github.io/p/2026-07-13-Tips：go get 为什么会标 indirect/">
+  <title>Tips：go get 为什么会标 indirect - Syerain</title>
 
   <link rel="shortcut icon" href="https://img.i8-mc.cn/file/V4PF4kwS.ico">
   <link rel="icon" href="https://img.i8-mc.cn/file/V4PF4kwS.ico">
@@ -304,7 +304,7 @@
 
   <div id="article-view">
     <div class="back-btn" onclick="location.href='/'">← 返回列表</div>
-    <h1 class="article-title">Nothin: go get 为什么会标 indirect</h1>
+    <h1 class="article-title">Tips：go get 为什么会标 indirect</h1>
     <div class="article-meta">
       <span><i class="fa-regular fa-calendar"></i> 2026-07-13</span>
       <span><i class="fa-regular fa-folder"></i> 默认</span>
@@ -430,7 +430,7 @@
       locale: { placeholder: '此处支持 Markdown 语法...' }
     });
   }
-  initWaline("2026-07-13-Nothin: go get \u4e3a\u4ec0\u4e48\u4f1a\u6807 indirect.md");
+  initWaline("2026-07-13-Tips\uff1ago get \u4e3a\u4ec0\u4e48\u4f1a\u6807 indirect.md");
 
   // Waline toolbar helpers
   function insertText(prefix, suffix) {
