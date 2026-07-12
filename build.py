@@ -276,7 +276,7 @@ def build_post_page(
 <div class="container">
   <header>
     <div class="brand-area">
-      <img src="https://img.i8-mc.cn/file/J0NJk8wH.jpeg" class="avatar" alt="avatar" onclick="location.href='/'">
+      <!-- <img src="https://img.i8-mc.cn/file/J0NJk8wH.jpeg" class="avatar" alt="avatar" onclick="location.href='/'"> -->
       <div style="display:flex; align-items:center;">
         <span class="site-title" onclick="location.href='/'">Syerain</span>
         <i id="theme-icon" class="fa-solid fa-sun theme-icon" onclick="toggleTheme()"></i>
